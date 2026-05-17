@@ -23,8 +23,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 25px;
-    width: 40%;
-    max-width: 1000px;
+    width: 90%;
+    max-width: 1400px;
     border-radius: 15px;
     
     backdrop-filter: blur(2px);
@@ -90,25 +90,13 @@ body {
 /* мейн */
 
 main {
-    max-width: 800px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
     line-height: 1.6;
     color: #ccc;
 }
 
-section {
-    margin-bottom: 30px;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-li {
-    margin-bottom: 15px;
-}
 
 /* блоби */
 
@@ -177,4 +165,126 @@ li {
 @keyframes blob5 {
     from { transform: translate(0, 0) scale(1); }
     to   { transform: translate(250px, -450px) scale(1.2); }
+}
+
+.AnFastInfo {
+    text-align: left;
+    border-radius: 25px;
+    padding: 30px;
+    width: 300px; 
+    flex-shrink: 0;
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    scrollbar-width: none;
+    
+    backdrop-filter: blur(2px);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+    background: linear-gradient(180deg, rgba(62, 62, 63, 0.5) 0%, rgba(45, 45, 45, 0.5) 100%);
+    
+    color: #fff;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    transition: transform 0.3s ease;
+}
+
+.AnFastInfo::-webkit-scrollbar {
+    display: none;
+}
+
+.AnFastInfo h2 {
+    margin: 0 0 20px 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.AnFastInfo img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.AnFastInfo p {
+    display: flex;             /* Вмикаємо флекс для рядка */
+    justify-content: space-between; /* Розштовхує назву і span по боках */
+    align-items: center;
+    margin: 10px 0;
+    font-size: 15px;
+    color: #ddd;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    padding-bottom: 5px;
+}
+
+.AnFastInfo span {
+    font-weight: 600;
+    color: #fff;
+    text-align: right;
+    margin-left: 10px; /* Відступ, щоб текст не злипався */
+}
+
+.AnFastInfo p:first-of-type {
+    font-weight: bold;
+    color: #ffcc00;
+    border: none;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.main-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 30px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.text-content {
+    flex: 1;
+    color: #fff;
+    line-height: 1.8;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    padding-right: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 0, 0, 0.4) rgba(255, 255, 255, 0.05);
+}
+
+.text-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.text-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.text-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.text-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 0, 0, 0.7);
+}
+
+.text-content p {
+    margin-bottom: 20px; /* Відступ між абзацами */
+    text-align: justify; /* Гарний рівний край */
+}
+
+.text-content h3 {
+    color: #ffcc00;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 30px 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
