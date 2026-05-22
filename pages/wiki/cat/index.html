@@ -3,52 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AniWIKI Home</title>
+    <title>AniWIKI - Кіт</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header-container">
         <header class="nav">
             <div class="logo">Ani<span>WIKI</span></div>
-            
-            <nav class="btn">
-                <a href="#">Головна</a>
-                <a href="#">Тварини</a>
-                <a href="#">Історія</a>
+            <nav class="nav-links">
+                <a href="/index.html">головна</a>
+                <a href="/pages/animals/index.html">тварини</a>
+                <a href="/pages/history/index.html">історія</a>
             </nav>
-            
             <div class="search-box">
-                <input type="text" placeholder="Пошук...">
+                <input type="text" id="search-input" placeholder="пошук..." autocomplete="off">
+                <div id="search-results" class="search-results-dropdown"></div>
             </div>
         </header>
     </div>
-    <main>
-        <div class="main-wrapper">
-            <div class="AnFastInfo">
-                <h2>Coala</h2>
-                <img src="photos/photo.jpg">
-                <p>Наукова інформація</p>
+
+    <main class="wiki-main">
+        <div class="wiki-container">
+            <div class="wiki-content glass-panel">
+                <h1>Кіт</h1>
+                
+                <h3>Загальна інформація</h3>
+                <p>Кіт (або свійський кіт) — невеликий ссавець родини котових, який є однією з найпопулярніших домашніх тварин у світі. Коти живуть поруч з людьми вже близько 10 тисяч років. Історично їх цінували за здатність полювати на гризунів, але сьогодні вони переважно є улюбленцями-компаньйонами.</p>
+                
+                <h3>Зовнішній вигляд</h3>
+                <p>Коти мають надзвичайно гнучке тіло, відмінну координацію, гострі зуби та кігті, які можуть втягуватися. У них чудово розвинений слух та нічний зір, що робить їх ідеальними мисливцями в темряві. Існує безліч порід з різною довжиною шерсті, кольорами та розмірами.</p>
+                
+                <h3>Спосіб життя</h3>
+                <p>Коти — дуже незалежні, але водночас соціальні тварини. Більшу частину свого життя вони проводять уві сні (від 12 до 16 годин на добу), щоб зберігати енергію для активності. У періоди неспання вони граються, полюють та ретельно доглядають за своєю шерстю.</p>
+                
+                <h3>Харчування</h3>
+                <p>За своєю природою коти є облігатними хижаками, що означає, що основа їхнього раціону — м'ясо. Їхній організм потребує специфічних поживних речовин, таких як таурин, які містяться лише у тваринному білку. У дикій природі вони полюють на мишей, птахів та комах.</p>
+                
+                <h3>Середовище існування</h3>
+                <p>Завдяки співіснуванню з людиною, коти поширені на всіх континентах, окрім Антарктиди. Вони комфортно почуваються як у міських квартирах, так і в приватних будинках або на вулицях.</p>
+                
+                <h3>Загрози для котів</h3>
+                <p>Для вуличних котів найбільшу небезпеку становлять автомобілі, інфекційні захворювання, суворі погодні умови, а також напади собак чи більших диких хижаків.</p>
+                
+                <h3>Цікаві факти</h3>
+                <ul>
+                    <li>Відбиток носа кожного кота унікальний, як відбитки пальців у людини.</li>
+                    <li>Коти можуть видавати близько 100 різних звуків, тоді як собаки — лише близько 10.</li>
+                    <li>Вони майже завжди приземляються на лапи завдяки вродженому рефлексу та дуже гнучкому хребту.</li>
+                    <li>Муркотіння кота має терапевтичний ефект і може сприяти загоєнню тканин.</li>
+                </ul>
+            </div>
+            
+            <aside class="AnFastInfo">
+                <h2>Кіт</h2>
+                <img src="/images/ani/cat.jpg" alt="Кіт">
+                <p class="info-title">Наукова інформація</p>
                 <p>Королівство: <span>Тварини</span></p>
                 <p>Тип: <span>Хордові</span></p>
                 <p>Клас: <span>Ссавці</span></p>
                 <p>Ряд: <span>Хижі</span></p>
                 <p>Родина: <span>Котові</span></p>
                 <p>Рід: <span>Кіт (Felis)</span></p>
-                <p>Вид: <span>Домашній кіт (Felis catus)</span></p>
-            <div class="text-content">
-            
-            </div>
+            </aside>
         </div>
     </main>
-    <footer></footer>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="logo">Ani<span>WIKI</span></div>
+            <p>made for openlesson in 2026 year</p>
+        </div>
+        <div class="footer-right">
+            <a href="/index.html#about">про проект</a> | <a href="/pages/history/index.html">історія</a>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
+    
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+        <div class="blob blob-5"></div>
+    </div>
 </body>
-<div class="blob-container">
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="blob blob-3"></div>
-  <div class="blob blob-4"></div>
-  <div class="blob blob-5"></div>
-</div>
 </html>

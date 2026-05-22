@@ -3,45 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AniWIKI Home</title>
+    <title>AniWIKI - Тварини</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header-container">
         <header class="nav">
             <div class="logo">Ani<span>WIKI</span></div>
-            
-            <nav class="btn">
-                <a href="#">Головна</a>
-                <a href="pages/wiki/coala/index.html">Тварини</a>
-                <a href="#">Історія</a>
+            <nav class="nav-links">
+                <a href="/index.html">головна</a>
+                <a href="/pages/animals/index.html" class="active">тварини</a>
+                <a href="/pages/history/index.html">історія</a>
             </nav>
-            
             <div class="search-box">
-                <input type="text" placeholder="Пошук...">
+                <input type="text" id="search-input" placeholder="пошук..." autocomplete="off">
+                <div id="search-results" class="search-results-dropdown"></div>
             </div>
         </header>
     </div>
-    <main> 
-        <h1>Список тварин</h1>
-        <div class="animals">
-            <button>Ведмідь</button>
-            <button>Кіт</button>
-            <button>Коала</button>
-            <button>Жираф</button>
-            <button>Лелека</button>
-            <button>Панда</button>
+    
+    <main class="animals-main">
+        <h2 class="page-title">Каталог тварин</h2>
+        
+        <div class="animals-grid">
+            <a href="/pages/wiki/bear/index.html" class="animal-card">
+                <img src="/images/ani/card/bear.png" alt="Ведмідь">
+                <h3>Ведмідь</h3>
+            </a>
+            
+            <a href="/pages/wiki/cat/index.html" class="animal-card">
+                <img src="/images/ani/card/cat.png" alt="Кіт">
+                <h3>Кіт</h3>
+            </a>
+            
+            <a href="/pages/wiki/coala/index.html" class="animal-card">
+                <img src="/images/ani/card/coala.png" alt="Коала">
+                <h3>Коала</h3>
+            </a>
+            
+            <a href="/pages/wiki/giraffa/index.html" class="animal-card">
+                <img src="/images/ani/card/giraffa.png" alt="Жирафа">
+                <h3>Жирафа</h3>
+            </a>
+            
+            <a href="/pages/wiki/lelekya/index.html" class="animal-card">
+                <img src="/images/ani/card/lelekya.png" alt="Лелека">
+                <h3>Лелека</h3>
+            </a>
+            
+            <a href="/pages/wiki/panda/index.html" class="animal-card">
+                <img src="/images/ani/card/panda.png" alt="Панда">
+                <h3>Панда</h3>
+            </a>
         </div>
     </main>
-    <footer></footer>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="logo">Ani<span>WIKI</span></div>
+            <p>made for openlesson in 2026 year</p>
+        </div>
+        <div class="footer-right">
+            <a href="/index.html#about">про проект</a> | <a href="/pages/history/">історія</a>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
+    
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+        <div class="blob blob-5"></div>
+    </div>
 </body>
-<div class="blob-container">
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="blob blob-3"></div>
-  <div class="blob blob-4"></div>
-  <div class="blob blob-5"></div>
-</div>
 </html>
