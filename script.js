@@ -1,9 +1,9 @@
 const imagePaths = [
-    '/web-program/images/ilu/bear.png',
-    '/web-program/images/ilu/cat.png',
-    '/web-program/images/ilu/gorobe.png',
-    '/web-program/images/ilu/puma.png',
-    '/web-program/images/ilu/wolf.png'
+    'web-program/images/ilu/bear.png',
+    'web-program/images/ilu/cat.png',
+    'web-program/images/ilu/gorobe.png',
+    'web-program/images/ilu/puma.png',
+    'web-program/images/ilu/wolf.png'
 ];
 
 const slider = document.getElementById('animal-slider');
