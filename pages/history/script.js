@@ -1,10 +1,10 @@
 const animalsBase = [
-    { name: 'ведмідь', url: 'web-program/pages/wiki/bear/index.html', img: 'web-program/images/ani/card/bear.png' },
-    { name: 'кіт', url: 'web-program/pages/wiki/cat/index.html', img: 'web-program/images/ani/card/cat.png' },
-    { name: 'коала', url: 'web-program/pages/wiki/coala/index.html', img: 'web-program/images/ani/card/coala.png' },
-    { name: 'жирафа', url: 'web-program/pages/wiki/giraffa/index.html', img: 'web-program/images/ani/card/giraffa.png' },
-    { name: 'лелека', url: 'web-program/pages/wiki/lelekya/index.html', img: 'web-program/images/ani/card/lelekya.png' },
-    { name: 'панда', url: 'web-program/pages/wiki/panda/index.html', img: 'web-program/images/ani/card/panda.png' }
+    { name: 'ведмідь', url: '/web-program/pages/wiki/bear/index.html', img: '/web-program/images/ani/card/bear.png' },
+    { name: 'кіт', url: '/web-program/pages/wiki/cat/index.html', img: '/web-program/images/ani/card/cat.png' },
+    { name: 'коала', url: '/web-program/pages/wiki/coala/index.html', img: '/web-program/images/ani/card/coala.png' },
+    { name: 'жирафа', url: '/web-program/pages/wiki/giraffa/index.html', img: '/web-program/images/ani/card/giraffa.png' },
+    { name: 'лелека', url: '/web-program/pages/wiki/lelekya/index.html', img: '/web-program/images/ani/card/lelekya.png' },
+    { name: 'панда', url: '/web-program/pages/wiki/panda/index.html', img: '/web-program/images/ani/card/panda.png' }
 ];
 
 const searchInput = document.getElementById('search-input');
