@@ -1,10 +1,10 @@
 // === БЛОК З ЗОБРАЖЕННЯМИ ===
 const imagePaths = [
-    '/images/ilu/bear.png',
-    '/images/ilu/cat.png',
-    '/images/ilu/gorobe.png',
-    '/images/ilu/puma.png',
-    '/images/ilu/wolf.png'
+    'web-program/images/ilu/bear.png',
+    'web-program/images/ilu/cat.png',
+    'web-program/images/ilu/gorobe.png',
+    'web-program/images/ilu/puma.png',
+    'web-program/images/ilu/wolf.png'
 ];
 
 const slider = document.getElementById('animal-slider');
@@ -31,12 +31,12 @@ setInterval(() => {
 // === ПОШУК ===
 
 const animalsBase = [
-    { name: 'ведмідь', url: 'pages/wiki/bear/index.html', img: 'images/ani/card/bear.png' },
-    { name: 'кіт', url: 'pages/wiki/cat/index.html', img: 'images/ani/card/cat.png' },
-    { name: 'коала', url: 'pages/wiki/coala/index.html', img: 'images/ani/card/coala.png' },
-    { name: 'жирафа', url: 'pages/wiki/giraffa/index.html', img: 'images/ani/card/giraffa.png' },
-    { name: 'лелека', url: 'pages/wiki/lelekya/index.html', img: 'images/ani/card/lelekya.png' },
-    { name: 'панда', url: 'pages/wiki/panda/index.html', img: 'images/ani/card/panda.png' }
+    { name: 'ведмідь', url: 'web-program/pages/wiki/bear/index.html', img: 'web-program/images/ani/card/bear.png' },
+    { name: 'кіт', url: 'web-program/pages/wiki/cat/index.html', img: 'web-program/images/ani/card/cat.png' },
+    { name: 'коала', url: 'web-program/pages/wiki/coala/index.html', img: 'web-program/images/ani/card/coala.png' },
+    { name: 'жирафа', url: 'web-program/pages/wiki/giraffa/index.html', img: 'web-program/images/ani/card/giraffa.png' },
+    { name: 'лелека', url: 'web-program/pages/wiki/lelekya/index.html', img: 'web-program/images/ani/card/lelekya.png' },
+    { name: 'панда', url: 'web-program/pages/wiki/panda/index.html', img: 'web-program/images/ani/card/panda.png' }
 ];
 
 const searchInput = document.getElementById('search-input');
