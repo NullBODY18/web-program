@@ -1,5 +1,3 @@
-// === ПОШУК ===
-
 const animalsBase = [
     { name: 'ведмідь', url: '../../pages/wiki/bear/index.html', img: '../../images/ani/card/bear.png' },
     { name: 'кіт', url: '../../pages/wiki/cat/index.html', img: '../../images/ani/card/cat.png' },
